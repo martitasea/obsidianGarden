@@ -743,6 +743,7 @@ module.exports = function(eleventyConfig) {
   userEleventySetup(eleventyConfig);
 
   return {
+    pathPrefix: "/obsidianGarden/",
     dir: {
       input: "src/site",
       output: "dist",
@@ -751,6 +752,6 @@ module.exports = function(eleventyConfig) {
     templateFormats: ["njk", "md", "11ty.js", "canvas"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: false,
-    passthroughFileCopy: true,
+    passthroughFileCopy: true
   };
 };
